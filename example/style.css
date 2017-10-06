@@ -1,0 +1,35 @@
+body{
+    font-family: arial;
+    font-size: small;
+}
+.item{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
+    text-align: center;
+    color: white;
+    overflow: wrap;	
+    float: left;
+}
+ul{
+  list-style-type: none;
+  
+  margin-left: -25px;
+}
+li {
+   display: inline;
+}
+.filter-button{
+  width: 50px;
+ margin-bottom: 5px;
+  
+}
+.filter-button:hover{
+    background: #ccc;
+    cursor: pointer;
+}
+.noresults {
+    display: none;
+}

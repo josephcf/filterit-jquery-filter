@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+    <title>Filter example</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <script src='../index.js'></script>
+    <link rel="stylesheet" href='style.css' />
+</head>
+<body>
+    <form>
+        <input class="searchText" placeholder="Search" type="text"> <input class="searchButton" id="searchBtn" type="submit">
+    </form>
+    <p id="result"></p>
+    <p id="test"></p>
+    <ul>
+        <li><button class="filter-button" data-filter="all">All</button></li>
+        <li><button class="filter-button" data-filter="short">Short</button></li>
+        <li><button class="filter-button" data-filter="tall">Tall</button></li>
+        <li><button class="filter-button" data-filter="big">Big</button></li>
+        <li><button class="filter-button" data-filter="small">Small</button></li>
+        <li><button class="filter-button" data-filter="many">Many</button></li>
+        <li><button class="filter-button" data-filter="few">Few</button></li>
+    </ul>
+    <div class="filter item all big tall">
+        Big and Tall
+    </div>
+    <div class="filter item all short small">
+        Short and Small
+    </div>
+    <div class="filter item all big short">
+        Big and Short
+    </div>
+    <div class="filter item all tall small">
+        Tall and Small
+    </div>
+    <div class="filter item all big few">
+        Big and Few
+    </div>
+    <div class="filter item all many small">
+        Many and Small
+    </div>
+    <div class="filter item all few small">
+        Few and Small
+    </div>
+    <div class="filter item all short few small">
+        Short and Small and Few
+    </div>
+    <div class="filter item all big tall many">
+        Big and Tall and Many
+    </div>
+    <div class="filter noresults">
+        No Results found
+    </div>
+</body>
