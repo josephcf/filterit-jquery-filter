@@ -22,13 +22,13 @@
             _self.filterVal = $(this).attr("data-filter");
             //store it in the session storage
             _self.saveFilter(_self.filterVal);
-            _self.updateView();
+            _self.render();
         });
         _self.searchButton.on('click', function(e) {
             e.preventDefault();
             _self.filterVal = _self.searchText.val();
             _self.saveFilter(_self.filterVal);
-            _self.updateView();
+            _self.render();
         });
     };
 
@@ -44,7 +44,7 @@
         }
     };
 
-    FilterIt.prototype.updateView = function() {
+    FilterIt.prototype.render = function() {
             
             if (!this.filterVal || this.filterVal === "all") {
                 this.filters.show();
